@@ -1,4 +1,4 @@
-# Telco Customer Churn — Data Analyst Project (EDA + Insights)
+# customer-churn-eda-business-insights
 
 ## Project Overview
 This project analyzes a Telco customer dataset to identify **factors driving customer churn**.  
