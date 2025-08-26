@@ -1,12 +1,10 @@
 
 
-
-
-
 # 📊 Customer Churn EDA & Business Insights  
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![PowerBI](https://img.shields.io/badge/PowerBI-Dashboard-yellow)
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/adityamishra-22/customer-churn-eda-business-insights/blob/main/telco_churn_notebook_.ipynb)
 
@@ -20,13 +18,14 @@ This project performs **Exploratory Data Analysis (EDA)** on a Telco customer da
 - Engineer new features for deeper insights.
 - Perform EDA to identify **high-risk churn segments**.
 - Export a **dashboard-ready dataset** for Power BI / Tableau.
+- Build **interactive Power BI dashboards** for churn insights.
 
 ---
 
 ## 🚀 Quickstart  
 
 1. **Clone the repo**  
-   ```bash
+   
    git clone https://github.com/adityamishra-22/customer-churn-eda-business-insights.git
    cd customer-churn-eda-business-insights
 
@@ -36,6 +35,7 @@ This project performs **Exploratory Data Analysis (EDA)** on a Telco customer da
 
    * `telco_clean_DA.csv` → cleaned dataset
    * KPI metrics & churn insights
+4. **Open Power BI file** → `Telco_Churn_Dashboard.pbix` → explore interactive visuals.
 
 ---
 
@@ -72,10 +72,32 @@ This project performs **Exploratory Data Analysis (EDA)** on a Telco customer da
 
 ## 📊 Key Insights
 
-* **Month-to-month contracts** → highest churn rate.
-* **Electronic Check** users churn \~2× more than **Auto-Pay** users.
+* **Month-to-month contracts** → highest churn rate (\~42%).
+* **Electronic Check** users churn \~2× more than **Auto-Pay** users (\~45% vs <20%).
 * **Tenure < 12 months** → \~3× higher churn risk vs long-tenure customers.
 * **High monthly charges** → positively correlated with churn probability.
+
+---
+
+## 🖥️ Power BI Dashboard
+
+An **interactive Power BI dashboard** was built using the cleaned dataset for better visualization:
+
+**Key Features:**
+
+* Overall Churn Rate KPI
+* Churn by Contract Type
+* Churn by Payment Method
+* Churn Trend by Tenure
+* High Spender & Month-to-Month Churn KPIs
+
+**Screenshots:**
+
+| Overall View                                 | 
+| -------------------------------------------- | 
+| <img width="1413" height="787" alt="Screenshot 2025-08-26 192841" src="https://github.com/user-attachments/assets/f16a538c-d5e0-435c-b028-80ad70200d67" />| 
+
+> *Interactive `.pbix` file and static PDF snapshots available in the repo.*
 
 ---
 
@@ -94,15 +116,15 @@ This project performs **Exploratory Data Analysis (EDA)** on a Telco customer da
 
 * **Python**: pandas, numpy, matplotlib, seaborn
 * **Jupyter Notebook / Colab**
-* **Power BI / Tableau**: for dashboards using exported dataset
+* **Power BI**: interactive dashboards
 
 ---
 
 ## 📈 Next Steps
 
-* Build interactive **Power BI dashboards** for churn cohorts.
-* Add **confidence intervals** to churn KPIs for statistical rigor.
-* Segment churn risk by **Contract + Tenure + Payment Method**.
+* Add churn prediction models (ML).
+* Introduce confidence intervals for churn KPIs.
+* Automate monthly churn reporting in Power BI Service.
 
 ---
 
@@ -116,4 +138,5 @@ This project is licensed under the **MIT License**.
 
 * **Dataset**: Telco Customer Churn (Kaggle)
 * **Visualization Inspiration**: Power BI Community
+
 
